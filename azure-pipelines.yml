@@ -30,7 +30,7 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<Azure Service Connection>'
-    appName: '<Your Azure Web App Name>'
+    azureSubscription: 'azure-service-connection'
+    appName: 'FlipsoApp'
     package: '$(Build.ArtifactStagingDirectory)/*.zip'
     deploymentMethod: 'runFromPackage'
