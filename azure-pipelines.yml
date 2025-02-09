@@ -8,8 +8,7 @@ trigger:
     include:
       - main
 
-pool:
-  vmImage: 'windows-latest'
+pool: my-private-pool
 
 steps:
 - task: UseDotNet@2
